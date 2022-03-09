@@ -23,10 +23,10 @@ jobs:
       LW_ACCESS_TOKEN: ${{ secrets.LW_ACCESS_TOKEN }}
       LW_ACCOUNT_NAME: ${{ secrets.LW_ACCOUNT_NAME }}
     steps:
-      - name: pull
-        shell: bash
-        run: |
-          docker pull image_name:image_tag #Pull the image to scan
+#       - name: pull
+#         shell: bash
+#         run: |
+#           docker pull image_name:image_tag #Pull the image to scan
 
       - name: scan
         shell: bash
