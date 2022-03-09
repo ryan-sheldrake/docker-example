@@ -19,6 +19,7 @@ jobs:
       
   scan_job:
     runs-on: ubuntu-18.04
+    environment: LW-GH-Env
     env:
       LW_ACCESS_TOKEN: ${{ secrets.LW_ACCESS_TOKEN }}
       LW_ACCOUNT_NAME: ${{ secrets.LW_ACCOUNT_NAME }}
