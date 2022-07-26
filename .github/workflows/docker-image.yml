@@ -25,7 +25,7 @@ jobs:
       run: |
           sudo apt-get update
           sudo apt-get -y install curl
-          curl -L https://github.com/lacework/lacework-vulnerability-scanner/releases/download/v0.6.1/lw-scanner-linux-386 -o lw-scanner
+          curl -L https://github.com/lacework/lacework-vulnerability-scanner/releases/download/v0.6.1/lw-scanner-linux-amd64 -o lw-scanner
           chmod +x lw-scanner
           ./lw-scanner image evaluate ryansheldrake/jenkins 2.60.3
       
